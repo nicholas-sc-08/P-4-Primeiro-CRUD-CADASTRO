@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crud.css">
+    <title>CRUD</title>
+</head>
+<body>
+    
+    <h1>🎃CRUD de Usuário🎃</h1>
+
+    <label>Nome de Usuário</label><br>
+    <input id="inpt_username"><br><br>
+
+    <select id="slct_opcoes">
+        <option value="1">Cadastrar</option>
+        <option value="2">Editar</option>
+        <option value="3">Excluir</option>
+        <option value="4">Listar</option>
+    </select>
+
+    <button onclick="opcoes()">Enviar</button>
+
+    <div id="exibir_resultados"></div>
+
+    <script src="crud.js"></script>
+</body>
+</html>

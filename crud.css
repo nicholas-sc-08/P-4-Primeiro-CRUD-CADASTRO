@@ -1,0 +1,36 @@
+body{
+    background-color: #f5f5f5;
+    color: #191919;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+input{
+    background-color: #f5f5f5;
+    color: #191919;
+    border: #191919 solid 1px;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+select{
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    border: #191919 solid 1px;
+
+}
+
+button{
+    background-color: #f5f5f5;
+    border: #191919 solid 1px;
+    border-radius: 20px;
+}
+
+button:hover{
+    background-color: #191919;
+    color: #f5f5f5;
+    transition: 0.5s;
+}
