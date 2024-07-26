@@ -26,8 +26,10 @@ function opcoes(){
 };
 
 function cadastrar(){
+    
+    username_existente = armazenar_nome_de_usuario.includes(inpt_username.value);
 
-    if(inpt_username.value != ""){
+    if(inpt_username.value != "" && username_existente == false){
         
         username = inpt_username.value;
         armazenar_nome_de_usuario.push(username);
@@ -35,7 +37,7 @@ function cadastrar(){
         alert(`Usuário cadastrado!`);
         dv_exibir_resultados.innerHTML = ``;
     } else{
-        alert(`Favor digitar um nome!`);
+        alert(`Nome de usuário já existente ou inválido!`);
     };
 };
 
