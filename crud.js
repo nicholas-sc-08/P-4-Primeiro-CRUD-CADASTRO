@@ -33,8 +33,8 @@ function cadastrar(){
         
         username = inpt_username.value;
         armazenar_nome_de_usuario.push(username);
-        console.log(armazenar_nome_de_usuario);
         alert(`Usuário cadastrado!`);
+        localStorage.setItem(`Nome de usuário:`, armazenar_nome_de_usuario);
         dv_exibir_resultados.innerHTML = ``;
     } else{
         alert(`Nome de usuário já existente ou inválido!`);
@@ -50,7 +50,7 @@ function editar(){
       alterar_username =  prompt(`Digite o novo nome de usuário:`);
         posicao_username = armazenar_nome_de_usuario.indexOf(inpt_username.value);
         armazenar_nome_de_usuario.splice(posicao_username, 1, alterar_username);
-        console.log(armazenar_nome_de_usuario);
+        localStorage.setItem(`Nome de usuário:`, armazenar_nome_de_usuario);
         dv_exibir_resultados.innerHTML = ``;
 
     } else {
@@ -68,8 +68,8 @@ function excluir(){
 
         posicao_username = armazenar_nome_de_usuario.indexOf(inpt_username.value);
         armazenar_nome_de_usuario.splice(posicao_username, 1);
+        localStorage.setItem(`Nome de usuário:`, armazenar_nome_de_usuario);
         alert(`Usuário Excluido!`);
-        console.log(armazenar_nome_de_usuario);
         dv_exibir_resultados.innerHTML = ``;
 
     } else {
